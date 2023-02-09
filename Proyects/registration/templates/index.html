@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>TecnoSell ¡Vender Nunca Fue Tan Facil !</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <script src="https://kit.fontawesome.com/026abbd815.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href= "{% static "lib/flaticon/font/flaticon.css" %}" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- Navbar Start -->    
+    <div class="container-fluid bg-light position-relative shadow">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+            <a href="{% url 'index' %}" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+                <img class="img-fluid mt-4" src={% static "img/ventaico.png" %} alt=""¨>
+                <span  class="text-primary">TecnoSell </span>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav font-weight-bold mx-auto py-0">
+                    <a href="{% url 'tiposventa' %}" class="nav-item nav-link">Tipos de Ventas</a>
+                    <a href="{% url 'plataforma' %}" class="nav-item nav-link">Plataforma Comercial</a>
+                    <a href="{% url 'plan' %}" class="nav-item nav-link">Técnicas</a>
+                </div>
+                <a href="{% url 'login' %}" class="btn btn-outline-primary">Cerrar Sesion</a>
+            </div>
+        </nav>
+        
+    </div>
+    <!-- Navbar End -->--
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary px-0 px-md-5 mb-5">
+        <div class="row align-items-center px-3">
+            <div class="col-lg-6 text-center text-lg-left">
+                <h1 class="display-3 font-weight-bold text-white">Técnicas de Venta</h1>
+                <p class="text-white mb-4">Antes, la unica via de compra de un producto consistia en acudir al establecimiento, ahora podemos efectuar la compra desde nuestros hogares, a través del teléfono, internet, etc . 
+                    Podemos adquirir en un beve plazo de tiempo sin necesidad de desplazarnos de nuestro domicilio</p>
+                <a href="{% url 'plan' %}" class="btn btn-secondary mt-1 py-3 px-5">Aprende más</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <img class="img-fluid mt-4" src={% static "img/ventas_ini.png" %} alt=""¨>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Facilities Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Tipos de Ventas</h4>
+                            <ol start="1">
+                                <li>Venta Personal </li>
+                                <li>Venta por internet</li>
+                                <li>Venta por telefono</li>
+                                <li>Venta mixta</li>
+                              </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Plataforma Comercial</h4>
+                            <ol start="1">
+                                <li>Plataforma de clientes  </li>
+                                <li>Plataforma de potenciales clientes</li>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pb-1">
+                    <div class="d-flex bg-light shadow-sm border-top rounded mb-4" style="padding: 30px;">
+                        <i class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"></i>
+                        <div class="pl-4">
+                            <h4>Tipos de Cliente</h4>
+                            <ol start="1">
+                                <li>Clientes reales  </li>
+                                <li>Clientes potenciales</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facilities Start -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="mb-4">Tipos de Ventas</h1>
+                    <li>Ventas directas</li>
+                    <p>Son aquellas ventas en las cuales la empresa vende directamente a clientes consumidores, usuarios o compradores, los bienes y servicios de su oferta comercial. Las empresas utilizan su propia fuerza de ventas.</p>
+                    <li>Ventas indirectas</li>
+                    <p>Corresponde a las ventas en las cuales la empresa fabricante o prestadora del servicio, vende a través de terceros distribuidores, así, estos terceros, contactan al cliente f inal, consumidor, usuario o comprador.</p>
+                    
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="mb-4">Plataforma Comercial</h1>
+                    <p>Las plataformas de comercio electrónico son aquellas que están 
+                        optimizadas para realizar transacciones, ya sea desde un sitio web 
+                        independiente o por medio de una aplicación en los gestores de contenido.
+                         Son el software necesario para que las empresas puedan vender y conectar con sus clientes.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="mb-4">Tipos de Cliente</h1>
+                    <p>Los tipos de clientes representan las diferentes 
+                        categorías de clientes con los que enfrenta una empresa, con cada clase de 
+                        cliente la empresa tiene que adecuar una entrega de producto 
+                        y una estrategia de marketing diferente.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                    
+                    <span class="text-white">TecnoSell</span>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="{% url 'index' %}"><i class="fa fa-angle-right mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2" href="{% url 'tiposventa' %}"><i class="fa fa-angle-right mr-2"></i>Tipos de Ventas</a>
+                    <a class="text-white mb-2" href="{% url 'plataforma' %}"><i class="fa fa-angle-right mr-2"></i>Plataforma Comercial</a>
+                    <a class="text-white mb-2" href="{% url 'plan' %}"><i class="fa fa-angle-right mr-2"></i>Técnicas</a>
+
+                </div>
+            </div>
+          
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static "lib/easing/easing.min.js" %}"></script>
+    <script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+    <script src="{% static "lib/isotope/isotope.pkgd.min.js" %}"></script>
+    <script src="{% static "lib/lightbox/js/lightbox.min.js" %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
